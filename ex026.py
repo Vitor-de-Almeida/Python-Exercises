@@ -9,4 +9,7 @@
 r = str(input('Enter a random phrase: '))
 print(r.count('a'))
 print(r.find('a'))
-print(r.find('a', 1))
+print(r.rfind('a'))
+
+
+
