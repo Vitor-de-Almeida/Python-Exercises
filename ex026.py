@@ -6,10 +6,15 @@
 
 -> In what position did it appear last time."""
 
-r = str(input('Enter a random phrase: '))
-print(r.count('a'))
-print(r.find('a'))
-print(r.rfind('a'))
+r = str(input('Enter a random phrase: ')).strip()
+r = r.replace('á', 'a')
+r = r.replace('Á', 'A')
+r = r.replace('À', 'A')
+r = r.replace('à', 'a')
+print(r.upper().count('A'))
+print(r.upper().find('A')+1)
+print(r.upper().rfind('A')+1)
+
 
 
 
