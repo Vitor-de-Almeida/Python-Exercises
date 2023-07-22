@@ -1,7 +1,10 @@
 """create a program that reads any sentence and says if it is a palindrome, disregarding the spaces."""
 s = str(input('\033[1;34mEnter a random phrase:\033[m ')).strip()
 word = s
+word2 = s.replace(' ', '')
 s = s.lower().replace(' ', '')
+tam = len(s)
+inv = s[tam::-1]
 g = len(s)
 e = g
 d = 0
@@ -11,7 +14,8 @@ for c in range(0, g):
         e = e - 1
         d = d + 1
         count += count + 1
-        if d >= g:
-            print(f'The word {word} is a palindrome!')
-    else:
-        print(f'The word {word} is not a palindrome!')
+print(f'\033[1;33mThe inverse of {word2} is {inv}!\033[m')
+if d >= g:
+    print(f'\033[1;32mThe word {word} is a palindrome!\033[m')
+else:
+    print(f'\033[1;32mThe word {word} is not a palindrome!\033[m')

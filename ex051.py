@@ -5,7 +5,8 @@ s = -1
 for c in range(1, 11):
     s = s + 1
     AR = t + r*s
-    print(f'{AR}')
+    print(f'\033[1;97m{AR}\033[m', end=' -> ')
+print('\033[1;33m\nEND\033[m')
 
 
 
