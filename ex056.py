@@ -24,12 +24,12 @@ for p in range(1, 5):
     qt = p
 average = (cage/qt) #def media
 
-print(f'The average age of the group is {average}')
+print(f'The average age of the group is {average} years old')
 if gender2 == 'm':
     print(f'The older man is {name2} and his age is {age2}')
 else:
     print('There are no men in this selection')
 if fem == 1:
-    print(f'There is {fem} under twenty years in this selection')
+    print(f'There is {fem} woman under twenty years in this selection')
 if fem > 1:
-    print(f'There are {fem} under twenty years in this selection')
+    print(f'There are {fem} women under twenty years in this selection')
