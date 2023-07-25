@@ -1,11 +1,9 @@
-n = 1
-par = impar = 0
-while n != 0:
-    n = int(input('Digite um valor: '))
-    if n != 0:
-        if n % 2 == 0:
-            par += 1
-        else:
-            impar += 1
-print(f'Você digitou {par} números pares e {impar} números ímpares!')
+seq = 0
+n1 = 0
+n2 = 1
+n3 = n1 + n2
+n4 = n3 + n2
+n5 = n4 + n3
+n6 = n5 + n4
+print(n6)
 
