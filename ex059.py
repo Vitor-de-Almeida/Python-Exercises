@@ -10,8 +10,8 @@ from time import sleep
 n1 = float(input('\033[1;32mEnter the first number: \033[m'))
 n2 = float(input('\033[1;32mEnter the second number: \033[m'))
 soma = 0
-end = 2
-while end != 0:
+end = True
+while end:
     op = int(input('\033[1;34mChose the option you want:\n[1] - Add\n'
                    '[2] - Multiply\n'
                    '[3] - Bigger\n'
@@ -34,5 +34,7 @@ while end != 0:
         print(f'\033[1;37mThe new selected number are {n1} and {n2}\033[m')
     elif op == 5:
         print('\033[1;97mYou left the program. Bye!\033[m')
-        end = 0
+        end = False
+    else:
+        print('\033[1;34mInvalid option. Try 1, 2, 3, 4 or 5!\033[m')
     sleep(1)
