@@ -1,5 +1,8 @@
-"""make a
-
+"""Make a program that reads the age and the gender of many people.
+For every people registered, the program must ask the user if he wants to continue or not. At the end, show on the screen:
+a - how many people has more than 18 years old.
+b - how many men were registered.
+c - how many women have less than 20 years old.
 """
 totaladult = 0
 totalman = 0
