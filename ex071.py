@@ -1,7 +1,6 @@
-"""
-
-
-"""
+"""Create a program that simulates the operation of an ATM.
+At first, ask the user what will be the amount to be withdrawn (integer number) and the program will inform how many
+bills of each value will be delivered. NOTE: Assume that the cashier has $50, $20, $10, and $1 bills."""
 print('\033[1;33m=\033[m'*25)
 print('\033[1;34mWelcome to the Bank of VR\033[m')
 print('\033[1;33m=\033[m'*47)
