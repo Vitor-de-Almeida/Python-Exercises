@@ -2,8 +2,8 @@ lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim', 'Batata Frita')
 
 for cont in range(0, len(lanche)):
     print(f'Eu vou comer {lanche[cont]}')
-for comida in lanche:
-    print(f'Eu vou comer {comida[0:2]}')
+for c in lanche[0:3]:
+    print(f'Eu vou comer {c}')
 for pos, comida in enumerate(lanche):
     print(f'Eu vou comer {comida} na posição {pos}')
 
