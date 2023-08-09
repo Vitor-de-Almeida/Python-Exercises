@@ -20,10 +20,10 @@ for f in range(16, 19):
     print(f'\033[1;34m{tp[f]}\033[m', end=', ')
 print(f'\033[1;34m{tp[19]}.\033[m')
 print(f'\033[1;33mThe list of teams in alphabetical order of the brazilian football championship are:\033[m')
-tp2 = sorted(tp)
-for d in range(0, 19):
-    print(f'\033[1;33m{tp2[d]}\033[m', end=', ')
-print(f'\033[1;33m{tp2[19]}.\033[m')
-print(f'\033[1;31m"Coritiba" team is in the position of {tp.index("Coritiba")+1}\033[m')
+#tp2 = sorted(tp)
+for d in sorted(tp):
+    print(f'\033[1;33m{d}\033[m', end=', ')
+#print(f'\033[1;33m{sorted(tp[19])}.\033[m')
+print(f'\033[1;31m\n"Coritiba" team is in the position of {tp.index("Coritiba")+1}\033[m')
 
 
