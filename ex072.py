@@ -4,12 +4,12 @@ import number2word
 number = ('Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten',
           'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen',
           'Nineteen', 'Twenty')
-n = int(input('\033[1;34mEnter an integer between 0 and 20: \033[m'))
+
 while True:
-    if not 0 <= n <= 20:
-        n = int(input('\033[1;34mTry again. Enter an integer between 0 and 20: \033[m'))
-    else:
-        print(f'\033[1;32mYou entered the number {number[n]} !\033[m')
+    n = int(input('\033[1;34mEnter an integer between 0 and 20: \033[m'))
+    if 0 <= n <= 20:
         break
+    print('\033[1;34mTry again.\033[m', end=' ')
+print(f'\033[1;32mYou entered the number {number[n]} !\033[m')
 
 

@@ -5,7 +5,7 @@ n = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 
 print(f'\033[1;34mThe generated numbers are:\033[m', end=' ')
 for t in n:
     print(f'\033[1;34m{t}\033[m', end=' ')
-print(f'\n\033[1;36mThe highest number is: {sorted(n)[4]}\033[m')
-print(f'\033[1;31mThe lowest number is: {sorted(n)[0]}\033[m')
+print(f'\n\033[1;36mThe highest number is: {sorted(n)[4]}\033[m') #Ex 1
+print(f'\033[1;31mThe lowest number is: {min(n)}\033[m') #Ex 2
 
 
