@@ -1,14 +1,36 @@
-var = ('\033[1;34mPencil.......................................$  ', 1.75,
-       'Rubber.......................................$  ', 1.75,
-       'Copybook.....................................$  ', 1.75,
-       'Book.........................................$  ', 1.75,
-       'Compass......................................$  ', 1.75,
-       'Schoolbag....................................$  ', 1.75,
-       'Pen..........................................$  ', 1.75,
-       'Soft pencil..................................$  ', 1.75, '\033[m')
-c = 0
-while True:
-    print(var[c], var[c+1])
-    c += 2
-    if c == len(var)-1:
-        break
+num = [2, 5, 9, 1]
+num[2] = 3
+num.append(7)
+num.sort(reverse=True)
+num.insert(2, 2)
+if 5 in num:
+    num.remove(5)
+else:
+    print('Five not found')
+print(f'{num}')
+print(f'This list has {len(num)} elements')
+
+
+
+valor = list()
+for cont in range(0,5):
+    valor.append(int(input('Enter the number you want:')))
+for c, v in enumerate(valor):
+    print(f'In the position {c}, found {v}!')
+print('Got at the end of the list.')
+
+
+
+a= [2, 3, 4, 7]
+b = a[:]
+b[2] = 8
+print(f'List A:{a}')
+print(f'List B:{b}')
+
+
+
+
+
+
+
+
