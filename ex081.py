@@ -8,13 +8,13 @@ cont2 = 0
 while True:
     numbers.append(int(input('Enter an number: ')))
     cont = str(input('Do you want to continue? [Y/N]')).strip().lower()
-    cont2 += 1
+    #cont2 += 1
     if cont == 'n':
         break
 numbers.sort(reverse=True)
 five = numbers.count(5)
 print('-=-'*10)
-print(f'{cont2} elements were typed')
+print(f'{len(numbers)} elements were typed')
 print('-=-'*10)
 print(f'The values entered in descending order are {numbers}')
 print('-=-'*10)
