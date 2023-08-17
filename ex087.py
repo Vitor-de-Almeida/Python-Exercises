@@ -1,3 +1,7 @@
+"""Improve the previous challenge, showing at the end:
+a) The sum of all even values entered.
+b) The sum of the values in the third column.
+c) The largest value in the second row."""
 matriz = [[0.0, 0.1, 0.2], [1.0, 1.1, 1.2], [2.0, 2.1, 2.2]]
 pair = 0
 soma = soma2 = 0

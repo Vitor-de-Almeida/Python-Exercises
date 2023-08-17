@@ -1,3 +1,4 @@
+"""Create a program that creates a 3x3 dimension matrix and fills it with values read from the keyboard."""
 matriz = [[0.0, 0.1, 0.2], [1.0, 1.1, 1.2], [2.0, 2.1, 2.2]]
 for c in range(0, 3):
     for p in range(0, 3):
