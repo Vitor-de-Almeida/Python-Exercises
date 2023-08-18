@@ -1,12 +1,7 @@
 """Create a program where the user can enter seven numeric values and register them in a single list that
 keeps even and odd values separate.
 At the end, show the even and odd values in ascending order."""
-numbers = list()
-pair = list()
-odd = list()
-numbers.append(pair[:])
-numbers.append(odd[:])
-print(numbers)
+numbers = [[], []]
 for c in range(0, 7):
     n = int(input(f'Enter the {c+1}º number: '))
     if n % 2 == 0:

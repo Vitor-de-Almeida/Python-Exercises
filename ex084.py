@@ -5,19 +5,17 @@ b) A list with the heaviest people;
 c) A list with the lightest people."""
 data = list()
 people = list()
-totpeople = 0
 bw = lw = 0
 while True:
     data.append(str(input('\033[1;34mEnter your name: \033[m')).strip())
     data.append(float(input('\033[1;34mEnter your weight: \033[m')))
     people.append(data[:])
     data.clear()
-    totpeople += 1
     goon = input('\033[1;34mDo you want to continue [Y/N]: \033[m').strip().lower()
     if goon[0] == 'n':
         break
 print('-=-'*10)
-print(f'\033[1;36mAt all, you registered {totpeople} people.')
+print(f'\033[1;36mAt all, you registered {len(people)} people.')
 for c in range(0, len(people)):
     if c == 0:
         bw = lw = people[0][1]

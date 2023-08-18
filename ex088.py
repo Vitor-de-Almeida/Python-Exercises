@@ -5,7 +5,7 @@ from random import sample
 from time import sleep
 cont = 0
 print('_'*30)
-print(f'{"Lottery":^30}')
+print(f'{"-=-Lottery-=-":^30}')
 print('_'*30)
 n = int(input('\033[1;34mHow many games do you want me to draw? \n\033[m'))
 card = list()
