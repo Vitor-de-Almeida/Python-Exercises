@@ -2,25 +2,26 @@
 Store these results in a dictionary.
 In the end, put that dictionary in order, knowing that the winner got the highest number on the dice."""
 from random import randint
-count = 1
+from time import sleep
+from operator import itemgetter
 print(f'{"=-="}'*4, f'{"Welcome to the Game":^5}', f'{"=-="}'*4)
-game = dict()
-players = []
-for c in range(0, 4):
-    game['Player'] = f'Player {c+1}'
-    game['Result'] = randint(1, 6)
-    players.append(game.copy())
+game = {'Player 1': randint(1, 6),
+        'Player 2': randint(1, 6),
+        'Player 3': randint(1, 6),
+        'Player 4': randint(1, 6)}
+ranking = dict()
 print(f'{"=-="}'*4, f'{"Sorted Values":^5}', f'{"=-="}'*4)
-for c in range(0, 4):
-    print(f'The {players[c]["Player"]} has {players[c]["Result"]}')
+for k, v in game.items():
+    print(f'The {k} rolled a {v} on the dice!')
+    sleep(0.4)
 print(f'{"=-="}'*4, f'{"Players Ranking":^5}', f'{"=-="}'*4)
-print(players)
-for p in players:
-    #for v in p.keys():
-        #print(f'{count}º place: The {v} got')
-    #count += 1
-    print(f'{count}º place: The {p["Player"]} got {p["Result"]}')
-    count += 1
+game = sorted(game.items(), key=itemgetter(1), reverse=True)
+for c in range(0, 4):
+    print(f'{c+1}º place: {game[c][0]} rolled a {game[c][1]} on the dice!')
+    sleep(0.4)
+
+
+
 
 
 
