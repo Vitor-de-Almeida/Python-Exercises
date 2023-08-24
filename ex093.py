@@ -1,5 +1,8 @@
-"""
-
+"""Create a program that manages the performance of a football player.
+The program will read the player's name and how many games he played.
+Then you will read the number of goals scored in each match.
+In the end, all of this will be stored in a dictionary,
+including the total number of goals scored during the championship.
 """
 score = dict()
 numberofgoals = list()
