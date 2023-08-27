@@ -9,8 +9,6 @@ print('-=-'*10)
 print(f'\033[1;34m{"Welcome":^27}\033[m')
 print('-=-'*10)
 category = dict()
-#gender = dict()
-#age = dict()
 people = list()
 count = 0
 countw = 0
