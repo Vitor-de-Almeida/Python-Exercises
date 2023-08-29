@@ -3,12 +3,11 @@ If the user has an employment card (employment card != 0),
 the dictionary will also receive the year of hiring and the user's salary.
 Calculate and add, in addition to age, with how many years the person will get the retirement,
 considering that the working time is 35 years."""
-from datetime import date
-year = date.today().year
+from datetime import datetime
 data = dict()
 data['name'] = str(input('Name: '))
 age = int(input('Year of birth: '))
-data['age'] = year - age
+data['age'] = datetime.now().year - age
 data['employmentcard'] = int(input('Employment Card: (0 not have)'))
 if data['employmentcard'] == 0:
     for k, v in data.items():
@@ -17,7 +16,7 @@ else:
     contdate = int(input('Year of hiring: '))
     data['hiring'] = contdate
     data['salary'] = float(input('Salary(payment): '))
-    data['retirement'] = data['age'] + (35-(year-data['hiring']))
+    data['retirement'] = data['age'] + (35 + data['hiring'] - datetime.now().year)
     print(data)
     for k, v in data.items():
         print(f'{k} has the value {v}')

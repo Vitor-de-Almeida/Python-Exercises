@@ -10,26 +10,31 @@ print(f'\033[1;34m{"Welcome":^27}\033[m')
 print('-=-'*10)
 category = dict()
 people = list()
-count = 0
 countw = 0
 som = 0
 while True:
     category['name'] = str(input('Name: '))
-    category['gender'] = str(input('Gender: '))
-    if category['gender'] == 'f':
-        countw += 1
+    while True:
+        category['gender'] = str(input('Gender: ')).strip().lower()
+        if category['gender'] == 'f':
+            countw += 1
+        if category['gender'] in 'm' or category['gender'] in 'f':
+            break
+        print('Error! Please, enter your correct gender!')
     category['age'] = int(input('Age: '))
-    n = str(input('Do you want to continue? [Y/N]')).strip().lower()
+    while True:
+        n = str(input('Do you want to continue? [Y/N]')).strip().lower()
+        if n in 'yn':
+            break
     people.append(category.copy())
-    count += 1
     if n == 'n':
         break
 print('-=-'*16)
-print(f'\033[1;36mThe group has {count} people!\033[m')
+print(f'\033[1;36mThe group has {len(people)} people!\033[m')
 for c in range(0, len(people)):
     som = som + people[c]["age"]
-med = som/count
-print(f'\033[1;36mThe average age of group is {med:.2f} years!\033[m')
+med = som/len(people)
+print(f'\033[1;36mThe average age of group is {med:5.1f} years!\033[m')
 if countw == 1:
     print(f'\033[1;36mThe woman registered is:\033[m', end=' ')
 elif countw >= 1:

@@ -9,7 +9,7 @@ game = {'Player 1': randint(1, 6),
         'Player 2': randint(1, 6),
         'Player 3': randint(1, 6),
         'Player 4': randint(1, 6)}
-ranking = dict()
+#ranking = dict()
 print(f'{"=-="}'*4, f'{"Sorted Values":^5}', f'{"=-="}'*4)
 for k, v in game.items():
     print(f'The {k} rolled a {v} on the dice!')
