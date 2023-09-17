@@ -6,52 +6,35 @@ b) From 10 to 0, from 2 to 2
 c) A custom count"""
 
 
-def counter(a, b):
-    print('-=-'*7)
-    for c in range(a, b+1):
-        print(c, end=' ')
-    print('END!')
-    print('-=-' * 7)
+def counter(beg, end, step):
+    if step < 0:
+        step *= -1
+    if step == 0:
+        step = 1
+    print('-=-' * 12)
+    print(f'Counter from {beg} until {end} from {step} to {step}')
+    print('-=-' * 12)
+    if beg < end:
+        #print('-=-' * 13)
+        for c in range(beg, end+step, step):
+            print(c, end=' ')
+        print('END!')
+        #print('-=-' * 13)
+    else:
+        #print('-=-' * 13)
+        for c in range(beg, end-step, -step):
+            print(c, end=' ')
+        print('END!')
+        #print('-=-' * 13)
 
 
-def counter2(a, b):
-    print('-=-'*7)
-    for c in range(a, b, -2):
-        print(c, end=' ')
-    print('END!')
-    print('-=-' * 7)
-
-
-print('-=-'*7)
-print(f'Counter from 1 until 10 from 1 to 1')
-counter(1, 10)
-print(f'Counter from 10 until 0 from 2 to 2')
-counter2(10, 0)
-
-
-def custom(beg, e, s):
-    print('-=-' * 14)
-    for c in range(beg, e, s):
-        print(c, end=' ')
-    print('END!')
-    print('-=-' * 14)
-
-
+counter(1, 10, 1)
+counter(10, 0, 2)
+print('-=-' * 13)
 print('Now is your turn to custom the counter!')
-print('-=-' * 14)
+print('-=-' * 13)
 beg = int(input('Start:'))
 e = int(input('End:'))
 s = int(input('Step:'))
-print('-=-' * 14)
-print(f'Counter from {beg} until {e} from {s} to {s}')
-custom(beg, e, s)
-
-
-
-
-
-
-
-
-
+counter(beg, e, s)
 
