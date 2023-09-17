@@ -4,10 +4,10 @@ a message with an adaptable size."""
 
 def write(txt):
     x = '~'
-    while len(x) < len(txt):
+    while len(x) < len(txt)+4:
         x += '~'
     print(x)
-    print(txt)
+    print(f'  {txt}')
     print(x)
 
 
