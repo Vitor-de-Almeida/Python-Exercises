@@ -1,6 +1,6 @@
-#make a program that reads the width and height of a wall in meters,
-#calculates its area and the amount of paint needed to paint it,
-#knowing that each liter of paint paints an area of 2 m².
+"""make a program that reads the width and height of a wall in meters,
+calculates its area and the amount of paint needed to paint it,
+knowing that each liter of paint paints an area of 2 m²"""
 w = float(input('Enter the width: '))
 h = float(input('Enter the height: '))
 a = (w*h)
